@@ -1,0 +1,7 @@
+def longest(x, y):
+    z = x + y
+    z = set(z)
+    return "".join(sorted(z))
+a = "absiksmsnsksksdld"
+b = "shidkxmswhbsndjdk"
+print(longest(a,b))
