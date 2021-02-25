@@ -1,0 +1,9 @@
+def count_bits(x):
+    c=" "
+    c+=str((x-2)%2)
+    while x!=0:
+        x=x//2
+        c+=str(x%2)
+    a = c[::-1]
+    a = a.count("1")
+    return a
