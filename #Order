@@ -1,0 +1,16 @@
+def split(x):
+    return [char for char in x]
+import random
+def order(x):
+    l_f_j = ["1","2","3","4","5","6","7","8","9"]
+    x = x.split()
+    a = []
+    for i in range(len(x)):
+        a.append(random.randint(1,len(x)))
+    for i in x:
+       p = split(i)
+       for j in p:
+            if j in l_f_j:
+                a[int(j)-1] = i
+    return " ".join(a)
+print(order(input()))
