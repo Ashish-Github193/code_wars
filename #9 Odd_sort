@@ -1,0 +1,19 @@
+def odd_sort(x):
+    a = []
+    n = x
+    b= []
+    for i in x:
+        if i == 0:
+            continue 
+        elif i%2 != 0:
+            a.append(i)
+            b.append(x.index(i))
+            x[x.index(i)] += 1
+    c = 0
+    a = sorted(a)
+    while c!= len(a):
+        for i in a:
+            n[b[c]] = a[c]
+            c += 1
+    return n
+print(odd_sort([5,7,9,0,4,6,1,3]))
