@@ -1,0 +1,13 @@
+x = "1777"
+def digital_root(x):
+    a = ""
+    temp = 0
+    for i in x:
+        a += str(i)
+    while len(a) != 1:
+        for i in a:
+            temp += int(i)
+        a = str(temp)
+        temp = 0
+    return a
+print(digital_root (x))
