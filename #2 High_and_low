@@ -1,0 +1,5 @@
+x = input().split()
+def high_and_low(x):
+    x = sorted(x)
+    return str(x[0])+" "+str(x[len(x)-1])
+print(high_and_low(x))
