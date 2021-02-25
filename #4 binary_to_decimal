@@ -1,0 +1,7 @@
+x = [1,0,1,0,1]
+a = 0
+b = -1
+for i in x:
+    a += i*2**(len(x)+b)
+    b -= 1
+print(a)
