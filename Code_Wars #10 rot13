@@ -1,0 +1,33 @@
+x = input()
+#------------------def_#1------------------#
+def split(x):
+    return [char for char in x]
+#------------------def_#2------------------#
+def rot13(x):
+    a = []
+    los = []
+    for i in range(9,65):
+        los.append(chr(i))
+    for i in range(91,97):
+        los.append(chr(i))
+    for i in range(123,127):
+        los.append(chr(i))
+        
+#-----------------main.py---------------#
+    for i in x:
+        i = i.lower()
+        if i in los:
+            a.append(i)
+        elif ord(i) + 13 > 122:
+            a.append(chr((ord(i)+13)-26))
+        else:
+            a.append(chr(ord(i)+13))
+#---------------case_checker-----------#
+    for i in range(len(x)):
+        if x[i] in los:
+            continue
+        elif x[i] == x[i].upper():
+            a[i] = a[i].upper()
+    return "".join(a)
+#-----------------output---------------#
+print(rot13 (x))
