@@ -1,0 +1,10 @@
+x = ["1","2","a",1,6,"x",7]
+def filter_list(x):
+    a = []
+    for i in x:
+        if i != str(i):
+            a.append (i)
+        else:
+            continue
+    return a
+print(filter_list(x))
