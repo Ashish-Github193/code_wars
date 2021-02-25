@@ -1,0 +1,11 @@
+def split(a):
+    return [char for char in x]
+a = 0
+x = input()
+y = split(x)
+for i in x:
+    a += int(i)**len(y)
+if a == int(x):
+    print("x is narcissistic number")
+else:
+    print("x isn't narcissistic number")
